@@ -1,0 +1,258 @@
+:root {
+  --white-cl: #ffffff;
+  --color-logo:#4D5AE5;
+  --color-black:#2E2F42;
+  --color-background:#F4F4FD; 
+  --color-434455:#434455;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background: var(--white-cl);
+    } 
+.link { text-decoration:none;
+}
+.list {
+  list-style: none;
+}
+
+/*---Header-----*/
+
+.logo-link {
+color:var(--color-logo); 
+font-family: Raleway, sans-serif; 
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 1.17;
+letter-spacing: 0.54px;
+text-transform: uppercase;
+}
+
+.header-logo-link{
+color:var(--color-black);
+font-family: Raleway, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 1.17;
+letter-spacing: 0.54px;
+text-transform: uppercase;
+}
+
+.header-menu-link-link {
+  color: #2E2F42;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.header-menu-link-link:hover, .header-menu-link-link:focus {
+  color:#404BBF;
+}
+.header-address{
+font-style:normal;
+}
+
+
+.header-adres-list{
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;  
+}
+.address-menu-link-link{
+  color: #434455;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.address-menu-link-link:hover, .address-menu-link-link:focus {
+  color: #404BBF;
+}
+
+/*---Section-one-----*/
+.section-one{
+  background: #2E2F42;
+}
+
+
+.section-one-title {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+.section-one-btn {
+  color: #FFF;
+  background: #4D5AE5;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+}
+.section-one-btn:hover, .section-one-btn:focus {
+  background-color: #404BBF;
+}
+
+/*----section-two (Effective Solutions for Your Business)-----*/
+.section-two-item {
+  color:#2E2F42;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.section-two-item-text {
+color: #434455;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+/* ---wawd (What Are We Doing)---*/
+
+ .wawd-title {
+  color:  #2E2F42;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+/*--our team (section-ot)-*/
+.section-ot{
+background-color: #F4F4FD;
+}
+
+.our-team-title {
+color: #2E2F42;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+.section-ot-list{
+background-color:#FFFFFF;
+}
+
+.our-team-subtitle {
+color:  #2E2F42;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.4px;
+}
+.our-team-text {
+  color: #434455;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;  
+}
+/*footer*/
+.footer {
+  background: #2E2F42;
+}
+
+.footer-logo-link{
+color: #F4F4FD;
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 1,17;
+letter-spacing: 0.54px;
+text-transform: uppercase;
+}
+
+.footer-text {
+color:  #F4F4FD;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.32px;
+}
+/*--page2--*/
+/*--services--*/
+
+.services-menu-btn {
+  color: var(--color-logo);
+  background: var(--color-background);
+  text-align: center; 
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.services-menu-btn:hover, .services-menu-btn:focus {
+  color: #FFFFFF;
+  background-color: #404BBF;
+}
+
+.services-menu-item {
+ color: #4D5AE5;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.64px;
+}
+.services-menu-list-item-title {
+  color: var(--color-black);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.services-menu-list-item-text {
+  color: var(--color-434455);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
