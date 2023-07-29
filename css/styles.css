@@ -6,6 +6,19 @@
   --color-434455:#434455;
 }
 
+p, h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
+margin-top: 0;
+margin-bottom:0;
+}
+ul, ol {
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+img{
+  display:block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -17,7 +30,51 @@ body {
   list-style: none;
 }
 
+.container { 
+  width:100%;
+  max-width: 1440px; 
+  padding-left: 15px;  
+  padding-right: 15px; 
+  margin-left: 156px; 
+  margin-right:156px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /*---Header-----*/
+.header{
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  gap: 332px;
+}
+.header-navigation{
+  display: flex; 
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header-adres-list {
+  display: flex;
+  gap: 40px;
+}
+
 
 .logo-link {
 color:var(--color-logo); 
@@ -39,6 +96,11 @@ font-weight: 800;
 line-height: 1.17;
 letter-spacing: 0.54px;
 text-transform: uppercase;
+
+}
+.header-menu {
+ display: flex; 
+ gap: 40px;
 }
 
 .header-menu-link-link {
@@ -80,10 +142,15 @@ font-style:normal;
 }
 
 /*---Section-one-----*/
-.section-one{
-  background: #2E2F42;
+
+.section-one{ 
+  padding-bottom: 120px;
 }
 
+.section-one-container{
+background: #2E2F42;
+padding: 260px 472px 292px 472px;
+}
 
 .section-one-title {
   color: #FFF;
@@ -94,6 +161,8 @@ font-style:normal;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  margin-left: auto;
 }
 .section-one-btn {
   color: #FFF;
@@ -104,13 +173,31 @@ font-style:normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  padding: 16px 32px;
+  border-radius: 4px;
   cursor: pointer;
+  border:none;
+  margin-top:  48px;
+  margin-left: auto;
+  
 }
 .section-one-btn:hover, .section-one-btn:focus {
   background-color: #404BBF;
 }
 
 /*----section-two (Effective Solutions for Your Business)-----*/
+.section-two {
+}
+
+.section-two-list{
+  display: flex;
+  gap:24px;
+  
+}
+.section-two-list-item{
+  width: calc((100% - 24px*3))/4;
+}
+
 .section-two-item {
   color:#2E2F42;
   font-family: Roboto;
@@ -119,6 +206,7 @@ font-style:normal;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .section-two-item-text {
 color: #434455;
@@ -129,7 +217,10 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-/* ---wawd (What Are We Doing)---*/
+/* section-three ---wawd (What Are We Doing)---*/
+ .wawd {
+padding-top: 120px;
+ }
 
  .wawd-title {
   color:  #2E2F42;
@@ -141,10 +232,26 @@ letter-spacing: 0.02em;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
+
+.wawd-list {
+  display: flex;
+  gap: 24px;
+  
+}
+.wawd-list-item{
+  width: calc((100% - 24px*2))/3;
+  margin: 0 auto;
+}
+
+
 /*--our team (section-ot)-*/
 .section-ot{
 background-color: #F4F4FD;
+padding-top: 120px;
+padding-bottom: 120px;
+
 }
 
 .our-team-title {
@@ -157,9 +264,18 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.72px;
 text-transform: capitalize;
+margin-bottom: 72px;
 }
+.section-ot-main-list{
+  display: flex;
+  gap: 24px;
+}
+
 .section-ot-list{
 background-color:#FFFFFF;
+width: calc((100% - 24px*3))/4;
+margin-bottom: 120px;
+margin: 0 auto;
 }
 
 .our-team-subtitle {
@@ -171,6 +287,8 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.4px;
+padding-top: 32px;
+padding-bottom: 8px;
 }
 .our-team-text {
   color: #434455;
@@ -181,10 +299,13 @@ letter-spacing: 0.4px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;  
+  padding-top: 8px;
 }
 /*footer*/
 .footer {
   background: #2E2F42;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
 }
 
 .footer-logo-link{
@@ -209,6 +330,15 @@ letter-spacing: 0.32px;
 }
 /*--page2--*/
 /*--services--*/
+.p-two-btn-list{
+  display: flex;
+  padding-top: 96px; 
+  padding-bottom: 72px;
+  gap: 24px; 
+  
+}
+
+
 
 .services-menu-btn {
   color: var(--color-logo);
@@ -220,11 +350,26 @@ letter-spacing: 0.32px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: 0;
   cursor: pointer;
+  
 }
+
 .services-menu-btn:hover, .services-menu-btn:focus {
   color: #FFFFFF;
   background-color: #404BBF;
+}
+
+.p-two-services {
+  display: flex;
+  flex-wrap: wrap; 
+  row-gap: 24px;
+  column-gap:48px;
+  margin-bottom: 120px;
+  
+}
+
+.p-two-services-list{
 }
 
 .services-menu-item {
@@ -245,6 +390,7 @@ letter-spacing: 0.64px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
 }
 .services-menu-list-item-text {
   color: var(--color-434455);
@@ -254,5 +400,7 @@ letter-spacing: 0.64px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 8;
+  padding-bottom: 32;
 }
 
