@@ -4,6 +4,7 @@
   --color-black:#2E2F42;
   --color-background:#F4F4FD; 
   --color-434455:#434455;
+  --color-e7e9fc: #e7e9fc;
 }
 
 p, h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
@@ -52,8 +53,7 @@ body {
 
 /*---Header-----*/
 .header{
-padding-top: 24px;
-padding-bottom: 24px;
+padding: 24px 0;
 border-bottom: 1px solid #e7e9fc;
 }
 
@@ -72,8 +72,8 @@ border-bottom: 1px solid #e7e9fc;
   gap: 40px;
 }
 
-
-.logo-link {
+/*header-logo*/
+.logo {
 color:var(--color-logo); 
 font-family: Raleway, sans-serif; 
 font-size: 18px;
@@ -82,9 +82,10 @@ font-weight: 800;
 line-height: 1.17;
 letter-spacing: 0.54px;
 text-transform: uppercase;
+margin-right: 76px;
 }
-
-.header-logo-link{
+/*header-logo-link*/
+.logo-studio{
 color:var(--color-black);
 font-family: Raleway, sans-serif;
 font-size: 18px;
@@ -140,9 +141,8 @@ font-style:normal;
 }
 
 /*---Section-one-----*/
-
 .section-one{ 
-  padding-bottom: 120px;
+  padding: 188px 0;
 }
 
 .section-one-container{
@@ -159,7 +159,7 @@ padding: 188px 472px 292px 472px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
    
 }
@@ -178,14 +178,17 @@ padding: 188px 472px 292px 472px;
   border:none;
   margin-top:  48px;
   margin-left: auto;
-  
+  display: block;
+  min-width: 169px;
 }
 .section-one-btn:hover, .section-one-btn:focus {
   background-color: #404BBF;
 }
 
 /*----section-two (Effective Solutions for Your Business)-----*/
-/*.section-two {}   */
+.section-two {
+  padding: 120px 0;  
+}
 
 .section-two-list{
   display: flex;
@@ -217,7 +220,7 @@ letter-spacing: 0.02em;
 }
 /* section-three ---wawd (What Are We Doing)---*/
  .wawd {
-padding-top: 120px;
+padding-bottom: 120px;
  }
 
  .wawd-title {
@@ -243,13 +246,11 @@ padding-top: 120px;
   margin: 0 auto;
 }
 
-
-/*--our team (section-ot)-*/
+/*--our team (section-ot)- section-four*/
 .section-ot{
 background-color: #F4F4FD;
 padding-top: 120px;
 padding-bottom: 120px;
-
 }
 
 .our-team-title {
@@ -274,6 +275,10 @@ background-color:#FFFFFF;
 width: calc((100% - 24px*3))/4;
 margin-bottom: 120px;
 margin: 0 auto;
+border-radius: 0px 0px 4px 4px;
+}
+.about-worker{
+  padding: 32px 0; 
 }
 
 .our-team-subtitle {
@@ -287,6 +292,7 @@ line-height: 1.2;
 letter-spacing: 0.4px;
 padding-top: 32px;
 padding-bottom: 8px;
+margin-bottom: 8px;
 }
 .our-team-text {
   color: #434455;
@@ -302,11 +308,11 @@ padding-bottom: 8px;
 /*footer*/
 .footer {
   background: #2E2F42;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+   
 }
 
-.footer-logo-link{
+.logo-studio-footer{
 color: #F4F4FD;
 font-family: Raleway;
 font-size: 18px;
@@ -315,6 +321,8 @@ font-weight: 800;
 line-height: 1,17;
 letter-spacing: 0.54px;
 text-transform: uppercase;
+display: inline-block;
+margin-bottom: 16px;
 }
 
 .footer-text {
@@ -330,14 +338,18 @@ padding-top: 17.5px;
 }
 /*--page2--*/
 /*--services--*/
+.section-portfolio{
+  padding-top: 96px; 
+  padding-bottom: 120px;
+}
+
 .p-two-btn-list{
   display: flex;
-  padding-top: 96px; 
-  padding-bottom: 72px;
   gap: 24px; 
   justify-content: center;
-  
-}
+  margin-bottom: 72px;
+  }
+
 .services-menu-btn {
   color: var(--color-logo);
   background: var(--color-background);
@@ -348,28 +360,41 @@ padding-top: 17.5px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border: 0;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--color-e7e9fc);
+  border-radius: 4px; 
   
 }
 
 .services-menu-btn:hover, .services-menu-btn:focus {
   color: #FFFFFF;
   background-color: #404BBF;
+  border: 1px solid transparent
 }
 
 .p-two-services {
   display: flex;
   flex-wrap: wrap; 
-  row-gap: 24px;
-  column-gap:48px;
+  row-gap: 48px;
+  column-gap: 24px;
   margin-bottom: 120px;
   
 }
 
-/*.p-two-services-list{} */
+.p-two-services-list{
+width: calc((100% - 48px)/3);
+} 
 
-.services-menu-item {
+.portfolio-list-explain{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+
+
+}
+
+/*.services-menu-item {
  color: #4D5AE5;
 text-align: center;
 font-family: Roboto;
@@ -378,7 +403,9 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.64px;
-}
+}  */
+
+
 .services-menu-list-item-title {
   color: var(--color-black);
   font-family: Roboto;
@@ -388,6 +415,7 @@ letter-spacing: 0.64px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-top: 32px;
+  margin-bottom: 8px;
 }
 .services-menu-list-item-text {
   color: var(--color-434455);
